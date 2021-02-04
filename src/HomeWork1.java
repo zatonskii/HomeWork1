@@ -2,7 +2,7 @@ public class HomeWork1 {
     public static void main(String args[]) {
         //        2. Создать переменные все
 //х пройденных типов данных и инициализировать их значения.
-        System.out.println("Задание 1.");
+        System.out.println("Задание 2.");
         boolean b = false;
         byte bt = 0;
         char c = 'x';
@@ -23,12 +23,13 @@ public class HomeWork1 {
         wThree ();
         isPositiveOrNegative (0);
         isNegative (0);
+        greetings("Дональд");
     }
 
     //        3. Написать метод, вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
 //                где a, b, c, d – аргументы этого метода, имеющие тип float.
     static int calc(int a, int b, int c, int d) {
-        System.out.println("Задание 2.");
+        System.out.println("Задание 3.");
         return a * (b + (c / d));
     }
 
@@ -37,7 +38,7 @@ public class HomeWork1 {
 //            что их сумма лежит в пределах от 10до 20(включительно),
 //            если да – вернуть true,в противном случае – false.
     public static void wThree() {
-        System.out.println("Задание 3.");
+        System.out.println("Задание 4.");
         int a;
         int b;
         int c;
@@ -60,7 +61,7 @@ public class HomeWork1 {
 //    Замечание: ноль считаем положительным числом.
 //
     public static void isPositiveOrNegative(int x) {
-        System.out.println("Задание 4.");
+        System.out.println("Задание 5.");
         if(x >= 0) {
             System.out.println("Число " + x + " положительное");
         } else {
@@ -71,12 +72,18 @@ public class HomeWork1 {
 //    Метод должен вернуть true, если число отрицательное,
 //    и вернуть false если положительное.
     public static boolean isNegative(int x) {
-        System.out.println("Задание 5.");
+        System.out.println("Задание 6.");
         if(x < 0) {
             return true;
         }
         return false;
-}
+    }
+//    Написать метод, которому в качестве параметра передается строка, обозначающая имя.
+//    Метод должен вывести в консоль сообщение «Привет, указанное_имя!».
+    public static void greetings(String name) {
+        System.out.println("Задание 7.");
+        System.out.println("Привет, " + name + "!");
+    }
 }
 
 
